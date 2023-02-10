@@ -29,6 +29,8 @@
 
 section{
     margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .section-title{
@@ -58,6 +60,7 @@ section{
 .primary-text{
     color: dimgrey;
     margin-bottom: 30px;
+    line-height: 26px;
     
 }
 
@@ -67,9 +70,14 @@ section{
     display: flex;
     gap: 90px;
     align-items: center;
-    margin-left: 200px;
-    margin-right: 200px;
 
+}
+
+.failure-title{
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 46px;
+    font-weight: 700;
 }
 
 .fail-items{
@@ -78,12 +86,11 @@ section{
 
 
 
-/* My plans */
+/*======= My plans =========*/
 .plans-container, .call-to-action{
     align-items: center;
     justify-content: center;
-    margin-left: 200px;
-    margin-right: 200px;
+
 }
 
 .plans{
@@ -93,10 +100,38 @@ section{
     text-align: center;
 }
 
-/* call to action */
+/* ========= Blog Section style ========= */
+
+.blogs-container{
+    display: flex;
+    gap: 24px;
+}
+
+.blog{
+    background-color: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(0,0,0,0.06);
+    border-radius: 5px;
+    padding: 30px;
+}
+.blog-title{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+.blog img{
+    width: 200px;
+    height: 150px;
+}
+
+
+/* =====call to action style======= */
 
 .action-content{
     background-image: url("../Images/watch.png");
+    /* background-image: linear-gradient(to right, rgba(255, 172, 77, 0.946), rgba(255,0,0,0)); */
     background-repeat: no-repeat;
     padding: 60px 250px 60px 65px;
     position: relative;
@@ -110,9 +145,11 @@ section{
     position: absolute;
     z-index: -1;
     inset: 0;
-    background: url('../Images/gradient3.png');
+    /* background: url('../Images/gradient3.png'); */
+    background-image: linear-gradient(90deg, #F15B22 0%, rgba(241, 91, 34, 0) 100%);
     background-repeat: no-repeat;
-    opacity: 0.9;
+    opacity: 1;
+    border-radius: 8px;
 
 }
 
@@ -134,8 +171,7 @@ footer{
     padding: 130px 200px;
     display: flex;
     gap: 300px;
-    /* align-items: center; */
-    /* justify-content: center; */
+    justify-content: center;
     color: white;
 }
 
@@ -166,3 +202,9 @@ footer{
     margin-bottom: 30px;
 }
 
+
+.social a{
+    text-decoration: none;
+    margin-right: 15px;
+
+}
